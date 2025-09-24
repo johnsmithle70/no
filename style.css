@@ -1,0 +1,243 @@
+/* Css Reset */
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/* CSS varialbles */
+:root {
+  --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 0px;
+  
+}
+#navbar::before {
+  content: "";
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -3;
+  opacity: 0.4;
+  top: 0px;
+  left: 0px;
+}
+#home .primary{
+  font-size: 23px;
+  margin: 20px 2px;
+  padding: 2px 2px;
+}
+
+/*  Navigation Bar Logo and Image */
+.logo {
+  margin: 12px 28px;
+}
+.logo img {
+  width: 100px;
+  height: 70px;
+  margin: 10px 3px;
+}
+/* Navigation Bar list styling */
+#navbar ul {
+  display: flex;
+}
+#navbar li {
+  list-style: none;
+  font-size: 1.2rem;
+}
+#navbar li a {
+  color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 18px;
+  text-decoration: none;
+}
+#navbar li a:hover {
+  color: rgb(0, 0, 0);
+  background-color: white;
+}
+
+/* Home Section */
+#home {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 3px 200px;
+  justify-content: center;
+  align-items: center;
+  /* margin-top: -150px;
+  margin-bottom: -5px; */
+}
+#home::before {
+  content: "";
+  position: absolute;
+  background: url("img/header.jpg");
+  background-position: center;
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  top: 0px;
+  left: 0px;
+
+  width: 100%;
+  z-index: -1;
+  opacity: 0.89;
+}
+#home h1 {
+  font-family: "Bree Serif", serif;
+  color: aliceblue;
+  text-align: center;
+}
+#home p {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#home h1 {
+  color: white;
+  text-align: center;
+}
+/* service Section */
+#services {
+  margin: 34px 34px;
+  display: flex;
+}
+#services .box {
+  font-family: "Bree Serif", serif;
+  
+  border: 2px solid brown;
+  margin: 6px 9px;
+  padding: 18px 8px;
+  border-radius: 23px;
+  background-color: #ffe9e9;
+}
+#services .box img {
+  height: 160px;
+  display: block;
+  margin: auto;
+}#services .box p{
+font-family: "Bree Serif", serif;
+}
+
+/* .pizza-img{
+  height: 100px;
+  width: 100px;
+} */
+
+/* Client section */
+#client-section{
+  height: 344px;
+  
+}
+#client-section::before{
+  content: "";
+  position: absolute;
+  background: url('img/our-flavor-background.jpg');
+  background-position: center;
+  height: 35%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
+}
+#clients{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -45px 2px;
+}
+.client-item{
+  padding: 56px ;
+}
+#clients .client-item img{
+  height: 100px;
+}
+.Multi-flavor{
+  text-align: center;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/* Contact Section */
+#contact{
+  position: relative;
+  margin: 2px 10px;
+}
+#contact::before{
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.7;
+  background-color: #ffe9e9;
+  border: 2px solid brown;
+  border-radius: 10px;
+
+}
+#contact-box{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 34px;
+  margin: 6px 6px;
+}
+#contact-box input,
+#contact-box textarea{
+width: 100%;
+padding: 0.5rem;
+border-radius: 6px;
+font-size: 1.1rem;
+
+}
+#contact-box form {
+  width: 40%;
+
+}
+#contact-box label{
+font-size: 1.2rem;
+font-family: "Bree Serif", serif;
+}
+
+/* utility clases */
+.h-primary {
+  font-family: "Bree Serif", serif;
+  font-size: 2.8rem;
+  padding: 12px 12px;
+}
+.h-seconday {
+  font-family: "Bree Serif", serif;
+  font-size: 2rem;
+  padding: 12px 12px;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: brown;
+  color: white;
+  margin: 17px 17px;
+  font-size: 1.3rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.center {
+  text-align: center;
+}
+footer{
+  background-color: black;
+  color: white;
+  padding: 9px 20px;
+}
